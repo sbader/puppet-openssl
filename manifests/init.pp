@@ -2,5 +2,8 @@
 #
 
 class openssl {
-  package { 'openssl': }
+  package { 'openssl':
+    ensure   => installed,
+    provider => 'homebrew'
+  }
 }
